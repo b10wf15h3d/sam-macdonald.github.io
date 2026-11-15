@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam Macdonald — Offensive Security Consultant</title>
+<meta name="description" content="Offensive security consultant, writer, speaker and community builder. Projects include Self Pwning, Root Cause and Pwn Kent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#0A0E0D;font-family:'Space Grotesk',system-ui,sans-serif;color:#E6EDEA;-webkit-font-smoothing:antialiased}
+a{color:#4ADE80;transition:color 0.2s}
+a:hover{color:#86EFAC}
+
+.sm-grid{
+  background-color:#0A0E0D;
+  background-image:radial-gradient(rgba(74,222,128,0.08) 1px,transparent 1px);
+  background-size:22px 22px;
+}
+.sm-card{
+  border:1px solid #1C2B23;
+  border-radius:8px;
+  background:#0F1513;
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  transition:border-color 0.2s;
+}
+.sm-card:hover{border-color:#2E4A3B}
+.sm-tag{
+  display:inline-block;
+  padding:4px 10px;
+  border:1px solid #2E4A3B;
+  border-radius:4px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;
+  color:#8FA89B;
+}
+.talk-row{
+  border:1px solid #1C2B23;
+  border-radius:8px;
+  background:#0F1513;
+  padding:28px 32px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:16px 32px;
+}
+.wrap{max-width:1120px;margin:0 auto;padding-left:24px;padding-right:24px}
+.section-num{font-family:'JetBrains Mono',monospace;font-size:14px;color:#4ADE80}
+.section-title{margin:0;font-size:clamp(30px,3.5vw,44px);line-height:1.1;font-weight:700;color:#F2F7F4}
+.body-text{margin:0;font-size:18px;line-height:1.65;color:#C9D6CF}
+</style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header style="border-bottom:1px solid #1C2B23;background:#0A0E0D;position:sticky;top:0;z-index:10">
+<div class="wrap" style="padding-top:18px;padding-bottom:18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <a href="#top" style="font-family:'JetBrains Mono',monospace;font-weight:800;font-size:20px;color:#F2F7F4;text-decoration:none;letter-spacing:-0.02em">sam<span style="color:#4ADE80">_</span>macdonald</a>
+  <nav aria-label="Main" style="display:flex;flex-wrap:wrap;gap:8px 24px;font-family:'JetBrains Mono',monospace;font-size:14px">
+    <a href="#about" style="color:#C9D6CF;text-decoration:none;padding:12px 0">./about</a>
+    <a href="#projects" style="color:#C9D6CF;text-decoration:none;padding:12px 0">./projects</a>
+    <a href="#talks" style="color:#C9D6CF;text-decoration:none;padding:12px 0">./talks</a>
+    <a href="#contact" style="color:#4ADE80;text-decoration:none;padding:12px 0">./contact</a>
+  </nav>
+</div>
+</header>
+
+<!-- ── Hero ── -->
+<section id="top" class="sm-grid" style="border-bottom:1px solid #1C2B23">
+<div class="wrap" style="padding-top:120px;padding-bottom:128px;display:flex;flex-direction:column;gap:24px">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:15px;color:#8FA89B"><span style="color:#4ADE80">$</span> whoami</div>
+  <h1 style="margin:0;font-family:'JetBrains Mono',monospace;font-size:clamp(48px,8vw,96px);line-height:0.95;font-weight:800;letter-spacing:-0.03em;color:#F2F7F4">Sam<br>Macdonald</h1>
+  <p style="margin:0;max-width:640px;font-size:clamp(20px,2.2vw,26px);line-height:1.4;color:#C9D6CF">Offensive security consultant by day. Writer, speaker and community builder by night. I break things professionally and try to stop people from breaking themselves.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px">
+    <span class="sm-tag">cyber security</span>
+    <span class="sm-tag">mental health</span>
+    <span class="sm-tag">community</span>
+    <span class="sm-tag">Kent, UK</span>
+  </div>
+</div>
+</section>
+
+<!-- ── About ── -->
+<section id="about" style="border-bottom:1px solid #1C2B23">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+  <div style="flex:1 1 500px;min-width:0;display:flex;flex-direction:column;gap:16px">
+    <div class="section-num">// 01 about</div>
+    <h2 class="section-title">Break things. Build people.</h2>
+    <p class="body-text">By day I work in offensive security — pentesting, red teaming and finding the holes before someone else does. The rest of my time goes into the side that doesn't make it into the report: the people.</p>
+    <p class="body-text">I write field guides on burnout and imposter syndrome, run a security social in Tunbridge Wells, and speak at conferences about what happens when we forget to patch ourselves.</p>
+  </div>
+  <div style="flex:0 0 auto;width:320px;border:1px solid #2E4A3B;border-radius:8px;background:#0A0E0D;font-family:'JetBrains Mono',monospace;font-size:15px;overflow:hidden">
+    <div style="padding:10px 18px;border-bottom:1px solid #1C2B23;color:#8FA89B;font-size:13px">sam.conf</div>
+    <div style="padding:20px 18px;display:grid;grid-template-columns:auto 1fr;gap:12px 16px;line-height:1.45">
+      <div style="color:#8FA89B">role</div><div style="color:#F2F7F4">Offensive Security Consultant</div>
+      <div style="color:#8FA89B">location</div><div style="color:#F2F7F4">Kent, UK</div>
+      <div style="color:#8FA89B">focus</div><div style="color:#F2F7F4">People &amp; culture</div>
+      <div style="color:#8FA89B">side_quests</div><div style="color:#4ADE80">Writer &amp; speaker</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ── Projects ── -->
+<section id="projects" style="border-bottom:1px solid #1C2B23;background:#0C1210">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:14px;max-width:640px">
+    <div class="section-num">// 02 projects</div>
+    <h2 class="section-title">Things I'm involved with</h2>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+
+    <a href="https://selfpwn.com" style="text-decoration:none" class="sm-card">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:8px;background:#4ADE80;display:flex;align-items:center;justify-content:center">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A0E0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8FA89B">selfpwn.com</div>
+      </div>
+      <h3 style="margin:0;font-size:24px;font-weight:700;color:#F2F7F4">Self Pwning</h3>
+      <p style="margin:0;font-size:16px;line-height:1.55;color:#A9B9B1">A 20-page field guide on stress, anxiety, burnout and imposter syndrome in cyber security. Free PDF, print booklet and website. CC BY-NC-ND 4.0.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px">
+        <span class="sm-tag">v1.0 live</span>
+        <span class="sm-tag">field guide</span>
+      </div>
+    </a>
+
+    <div class="sm-card">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:8px;background:#22D3EE;display:flex;align-items:center;justify-content:center">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0A0E0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8FA89B">for leaders</div>
+      </div>
+      <h3 style="margin:0;font-size:24px;font-weight:700;color:#F2F7F4">Root Cause</h3>
+      <p style="margin:0;font-size:16px;line-height:1.55;color:#A9B9B1">A companion guide for managers and leaders: how to spot the signs, have the conversation and build a team culture where people don't burn out quietly. 24 pages, in draft.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px">
+        <span class="sm-tag">draft v0.3</span>
+        <span class="sm-tag">field guide</span>
+      </div>
+    </div>
+
+    <a href="https://pwnkent.co.uk" style="text-decoration:none" class="sm-card">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:8px;background:#0A0E0D;border:1px solid #1C2B23;display:flex;align-items:center;justify-content:center">
+          <svg role="img" aria-label="Kent horse" viewBox="50 5 132 190" width="28" height="36"><path fill="#FFFFFF" fill-rule="evenodd" d="M44 56 L58 36 Q66 24 76 18 L76 6 L82 15 L88 6 L89 18 L96 22 L94 28 L102 32 L99 38 L107 44 L103 50 L111 56 L107 62 L114 70 L136 100 Q146 108 150 116 Q166 104 186 110 Q174 116 182 130 Q172 124 168 130 Q178 138 176 154 Q164 138 156 138 Q160 150 156 160 L160 174 L152 188 L157 194 L140 194 L142 186 L146 174 L142 162 L134 154 L128 152 Q120 160 118 170 L108 186 L111 194 L95 194 L100 184 L108 166 Q112 152 110 146 L102 132 Q96 122 90 117 L79 118 L72 129 L75 139 L61 139 L63 128 L69 112 Q73 104 81 101 L85 96 L74 89 L66 96 L67 107 L53 107 L56 94 L67 80 Q75 74 85 76 Q89 66 82 58 L76 50 Q70 56 60 60 L50 64 Q44 64 44 56 Z M67 37 a3 3 0 1 0 0.01 0 Z"/></svg>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8FA89B">pwnkent.co.uk</div>
+      </div>
+      <h3 style="margin:0;font-size:24px;font-weight:700;color:#F2F7F4">Pwn Kent</h3>
+      <p style="margin:0;font-size:16px;line-height:1.55;color:#A9B9B1">A monthly cyber security social in Tunbridge Wells. Meet, learn and socialise with the local security community over a drink. Launching soon.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px">
+        <span class="sm-tag">launching</span>
+        <span class="sm-tag">meetup</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+</section>
+
+<!-- ── Talks ── -->
+<section id="talks" style="border-bottom:1px solid #1C2B23">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <div class="section-num">// 03 talks</div>
+    <h2 class="section-title">Conference talks</h2>
+    <p class="body-text">I talk about the human side of cyber security: what stress and burnout actually look like in this industry, and what we can do about it.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Self Pwning</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Barcelona · 2026</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Self Pwning</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">CRESTCon · 2026</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Self Pwning</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides London · 2025</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Self Pwning</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Vienna · 2025</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">So You Want To Be A Hacker?</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Newcastle · 2025</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">careers</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Dealing With Imposter Syndrome</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Kent · 2025</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Dealing With Imposter Syndrome</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Ljubljana · 2024</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">Dealing With Imposter Syndrome</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">Elbsides · 2024</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">mental health</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">I Know What You Did Last Summer</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Cymru · 2024</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">OSINT</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">I Know What You Did Last Summer</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Basingstoke · 2024</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">OSINT</span></div>
+    </div>
+    <div class="talk-row">
+      <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:6px">
+        <h3 style="margin:0;font-size:20px;font-weight:700;color:#F2F7F4">OSINT Kill Chain</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#A9B9B1">BSides Cambridge · 2023</p>
+      </div>
+      <div style="flex:0 0 auto"><span class="sm-tag">OSINT</span></div>
+    </div>
+  </div>
+
+  <p style="margin:0;font-size:16px;color:#8FA89B;font-style:italic">Interested in having me speak? <a href="#contact">Get in touch</a>.</p>
+</div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact" class="sm-grid">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center">
+  <div class="section-num">// 04 contact</div>
+  <h2 class="section-title">Get in touch</h2>
+  <p style="margin:0;max-width:520px;font-size:18px;line-height:1.65;color:#C9D6CF">Whether it's about speaking, collaborating, or just saying hello.</p>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:16px">
+    <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" style="display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:6px;border:2px solid #2E4A3B;color:#E6EDEA;font-weight:500;font-size:17px;text-decoration:none;font-family:'JetBrains Mono',monospace">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+    <a href="mailto:hello@sam-macdonald.com" style="display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:6px;background:#4ADE80;color:#0A0E0D;font-weight:700;font-size:17px;text-decoration:none;font-family:'JetBrains Mono',monospace">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Email
+    </a>
+  </div>
+</div>
+</section>
+
+</body>
+</html>
